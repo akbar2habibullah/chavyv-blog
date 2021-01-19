@@ -20,7 +20,7 @@ function App() {
         `https://notion-api.splitbee.io/v1/table/${NOTION_BLOG_ID}`
       )
       .then((res) => {
-        setPost(res.data);
+        setPost(res.data.filter((post) => post.published));
       });
   }, [NOTION_BLOG_ID]);
 
