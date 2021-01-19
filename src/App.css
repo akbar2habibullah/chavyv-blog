@@ -1,38 +1,107 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&display=swap");
+
+:root {
+  --dark-main-color: #673a13;
+  --main-color: #dda15e;
+  --light-main-color: #fefae0;
+
+  --dark-secondary-color: #283618;
+  --light-secondary-color: #606c38;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  overflow-x: hidden;
+  font-family: "Playfair Display";
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+html,
+body {
+  margin: 0;
+  background-color: var(--light-main-color);
 }
 
-.App-header {
-  background-color: #282c34;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-y: hidden;
+}
+
+.dark-brown {
+  color: var(--dark-main-color);
+}
+
+.light-brown {
+  color: var(--main-color);
+}
+
+a {
+  color: var(--dark-main-color);
+}
+
+a:hover {
+  color: var(--dark-secondary-color);
+  text-decoration: none;
+}
+
+header {
+  background-color: var(--main-color);
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+header .brand {
+  color: var(--light-main-color);
+  font-weight: 700;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+header p {
+  font-size: 1.75rem;
+}
+
+.foto-profil {
+  max-width: 20vw;
+  box-shadow: 0 5px 15px hsla(0, 0%, 0%, 0.3);
+}
+
+.card {
+  border-radius: 10px;
+  border-color: var(--main-color);
+  background-color: var(--light-main-color);
+  margin: 10px 5px;
+}
+
+.card-title {
+  cursor: pointer;
+}
+
+.content {
+  max-width: 30rem;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.content h4 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin: 10px 20px;
+  cursor: pointer;
+}
+
+.content img {
+  display: block;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+@media (max-width: 768px) {
+  .foto-profil {
+    max-width: 50vw !important;
   }
-  to {
-    transform: rotate(360deg);
+
+  .content h4 {
+    top: auto;
   }
 }
