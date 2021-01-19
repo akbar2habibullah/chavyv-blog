@@ -10,7 +10,7 @@ import Blog from "./Blog.js";
 import NoMatch from './NoMatch.js'
 
 function App() {
-  const NOTION_BLOG_ID = process.env.NOTION_BLOG_ID;
+  const NOTION_BLOG_ID = process.env.REACT_APP_NOTION_BLOG_ID;
   
   const [posts, setPost] = useState([]);
 
@@ -22,7 +22,7 @@ function App() {
       .then((res) => {
         setPost(res.data);
       });
-  }, []);
+  }, [NOTION_BLOG_ID]);
 
   return (
     <Router>

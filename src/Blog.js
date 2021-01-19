@@ -5,13 +5,14 @@ import { NotionRenderer } from "react-notion";
 
 function Blog({ post }) {
   const [blog, setBlog] = useState({});
+  
   useEffect(() => {
     axios
       .get(`https://notion-api.splitbee.io/v1/page/${ post.id }`)
       .then((res) => {
         setBlog(res.data);
       });
-  }, []);
+  }, [post.id]);
 
   return (
     <div className="content justify-content-center">
