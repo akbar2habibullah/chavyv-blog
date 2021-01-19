@@ -9,9 +9,9 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Blog from "./Blog.js";
 import NoMatch from './NoMatch.js'
 
-const NOTION_BLOG_ID = process.env.NOTION_BLOG_ID;
-
 function App() {
+  const NOTION_BLOG_ID = process.env.NOTION_BLOG_ID;
+  
   const [posts, setPost] = useState([]);
 
   useEffect(() => {

@@ -7,7 +7,7 @@ function Blog({ post }) {
   const [blog, setBlog] = useState({});
   useEffect(() => {
     axios
-      .get(`https://notion-api.splitbee.io/v1/page/${post.id}`)
+      .get(`https://notion-api.splitbee.io/v1/page/${ post.id }`)
       .then((res) => {
         setBlog(res.data);
       });
