@@ -22,8 +22,9 @@ function Blog({ post }) {
         <NotionRenderer blockMap={blog} />
       </div>
       <Link to="/">
-        <h4 className="my-4 light-brown">Back</h4>
+        <h4 className="mt-4 light-brown">Back</h4>
       </Link>
+      <br />
     </div>
   );
 }
