@@ -24,7 +24,6 @@ function Blog({ post }) {
       <Link to="/">
         <h4 className="mt-4 light-brown">Back</h4>
       </Link>
-      <br />
     </div>
   );
 }

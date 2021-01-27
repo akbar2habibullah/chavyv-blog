@@ -103,5 +103,6 @@ header p {
 
   .content h4 {
     top: auto;
+    margin-bottom: 30px !important;
   }
 }
