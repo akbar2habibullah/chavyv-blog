@@ -72,7 +72,7 @@ function App() {
                   GitHub
                 </a>{" "}
                 <br />
-                Copyright © {new Date().getFullYear()}{" "}
+                Copyright © { new Date().getFullYear() }{" "}
                 <a
                   href="https://www.chavyv.xyz/"
                   target="_blank"
