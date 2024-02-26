@@ -74,7 +74,7 @@ function App() {
                 <br />
                 Copyright © { new Date().getFullYear() }{" "}
                 <a
-                  href="https://www.chavyv.xyz/"
+                  href="https://chavyv.pages.dev/"
                   target="_blank"
                   rel="noreferrer"
                 >
